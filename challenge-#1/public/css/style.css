@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --color-parent: #23424A;
+  --color-child: #23727A
+}
+
+
+  /* why EM'S ? 16px is default font * 5 (em) = 80px 
+  DON'T do pixels use % width: 900px; 
+ */
+  .parent {
+  background-color: var(--color-parent);
+  padding: 2.5em; 
+
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.child {
+  background-color: var(--color-child);
+  color: white; 
+  width: 50%;
+}
