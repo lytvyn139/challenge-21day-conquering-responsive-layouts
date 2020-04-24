@@ -1,5 +1,3 @@
-
-
 *,
 *::before,
 *::after {
@@ -50,6 +48,7 @@ h1 {
 .row {
   display: flex;
   justify-content: space-between;
+
 }
 
 .col {
@@ -66,18 +65,34 @@ header {
   padding: 0.5em 0;
 }
 
-.nav__list {
-  display: flex;
+.nav {
+  display: flex; /* this should be off in Varian 1 */
   justify-content: space-between;
-  margin: 2rem 10rem;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* border: 2px solid palevioletred; */
+  
+}
+
+.nav__list {
+  margin: 0em;
   padding: 0;
   list-style: none;
+
+  display: flex;
+  align-items: center;
+  border: 2px solid palegreen;
+  font-size: .9rem;
+  
+  
 }
 
 .nav__link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 
 .nav__link--button {
@@ -90,6 +105,26 @@ header {
 .nav__link:hover {
   opacity: 0.75;
 }
+
+.nav__list--primary {
+  margin: 0 auto;
+}
+
+.nav__list--secondary {
+}
+
+
+
+.nav__item + .nav__item {
+  /*font-size: 2em;  to show it's gonna select only them */
+  margin-left: 1em; /* item spacer */
+}
+
+/* variant 1 to push them to the right
+will grag the next item to the right as well 
+.nav__item--push-right{
+  margin-left: auto; 
+}*/
 
 .hero {
   padding: 100px 0;
