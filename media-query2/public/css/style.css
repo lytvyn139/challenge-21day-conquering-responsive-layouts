@@ -162,3 +162,22 @@ will grag the next item to the right as well
   background-color: #136c72;
   padding-bottom: 3rem;
 }
+
+@media (max-width: 600px) {
+  .row,
+  .nav {
+    display: inline-block
+  }
+
+  .hero__text,
+  .hero__img,
+  .primary-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .hero__img {
+    margin-top: 2em;
+  }
+
+}

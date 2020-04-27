@@ -55,5 +55,18 @@ Flexbox Challenge
 ## Day 11
 Nav finished
 
+## Day 15
+Media queries
+/* /600px or bigger */
+@media (min-width: 600px) {
+
+
+}
+
+/* 600px or bigger */
+@media (max-width: 600px) {
+
+}
+
 
 
