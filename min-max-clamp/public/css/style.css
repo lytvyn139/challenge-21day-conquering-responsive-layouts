@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.example {
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background-color: steelblue;
+
+  width: min(500px, 70%);
+  /* same as:
+  width: 70%;
+  max-width: 500px;
+  */
+}
+
+.hello {
+  text-align: center;
+}
+
+
